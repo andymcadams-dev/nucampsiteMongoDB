@@ -20,6 +20,7 @@ campsiteRouter
         console.log("Campsite Create ", campsite);
         res.statusCode = 200;
         res.setHeader("Content-Type", "application/json");
+        res.json(campsite);
       })
       .catch((err) => next(err));
   })
